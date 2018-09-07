@@ -13,8 +13,8 @@ The following applications are available with dire:
 Install
 ===
 * GPU:
-nvcc -m64 -gencode arch=compute_60,code=sm_60 main.cu -o dire_gpu -std=c++11
-(On windows, run cmd with the Developer Command Prompt for VS 2017)
+   * nvcc -m64 -gencode arch=compute_60,code=sm_60 main.cu -o dire_gpu -std=c++11
+   * (On windows, run cmd with the Developer Command Prompt for VS 2017)
 
 * CPU:
    * On linux:     g++ main.cpp -o dire -std=c++11
