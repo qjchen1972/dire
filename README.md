@@ -1,7 +1,10 @@
 
-Dire is a c++ package that provides two high-level features:
+Dire is a c++ package that provides two  features:
 
-Double precision
+*Without third-party library,  Deep neural networks built on  pure c++ 
+*Double precision  computation  with  GPU acceleration
+
+
 
 dire是什么
 ====
