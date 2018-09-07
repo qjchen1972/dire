@@ -1,8 +1,8 @@
 
 Dire is a c++ package that provides two  features:
 
-*Without third-party library,  Deep neural networks built on  pure c++ 
-*Double precision  computation  with  GPU acceleration
+* Without third-party library,  Deep neural networks built on  pure c++ 
+* Double precision  computation  with  GPU acceleration
 
 
 
