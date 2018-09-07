@@ -22,3 +22,5 @@ dire的几个应用
 
 bone suppression
 -------
+把胸片的肋骨去掉。dire的双精度让函数回归变得更精细。当时采用的12层类似残差网络。效果如下：
+![](https://github.com/qjchen1972/dire/blob/master/img/bone_test.png)
