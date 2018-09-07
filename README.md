@@ -6,7 +6,7 @@ Dire is a c++ package that provides three  features:
 * As version V0.1, it is too slow to train too deep network.
 
 The following applications are available with dire:
-* [bone suppression]https://github.com/qjchen1972/dire/blob/master/bone%20suppression/README.md
+* [bone suppression](https://github.com/qjchen1972/dire/blob/master/bone%20suppression/README.md)
 
 
 
