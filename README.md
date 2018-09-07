@@ -1,8 +1,12 @@
 
-Dire is a c++ package that provides two  features:
+Dire is a c++ package that provides three  features:
 
 * Without third-party library,  Deep neural networks built on  pure c++ 
 * Double precision  computation  with  GPU acceleration
+* As version V0.1, it is too slow to train too deep network.
+
+The following applications are available with dire:
+* [bone suppression]https://github.com/qjchen1972/dire/blob/master/bone%20suppression/README.md
 
 
 
