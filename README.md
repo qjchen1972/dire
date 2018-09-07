@@ -10,6 +10,15 @@ The following applications are available with dire:
 * [Bacilli detection](https://github.com/qjchen1972/dire/blob/master/Bacilli%20detection/README.md)
 * [ChexNet with dire ](https://github.com/qjchen1972/dire/blob/master/ChexNet/README.md)
 
+Install
+===
+* GPU:
+nvcc -m64 -gencode arch=compute_60,code=sm_60 main.cu -o dire_gpu -std=c++11
+(On windows, run cmd with the Developer Command Prompt for VS 2017)
+
+* CPU:
+1. On linux:  g++ main.cpp -o dire -std=c++11
+2. On windows: compile with VS 2017
 
 
 dire是什么
