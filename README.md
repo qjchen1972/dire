@@ -7,6 +7,8 @@ Dire is a c++ package that provides three  features:
 
 The following applications are available with dire:
 * [bone suppression](https://github.com/qjchen1972/dire/blob/master/bone%20suppression/README.md)
+* [Bacilli detection](https://github.com/qjchen1972/dire/blob/master/Bacilli%20detection/README.md)
+* [ChexNet with dire ](https://github.com/qjchen1972/dire/blob/master/ChexNet/README.md)
 
 
 
