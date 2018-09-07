@@ -226,7 +226,7 @@ void create_check_travel(Clayer *start)
 }
 
 
-#include "../test.h"
+#include "../Bacilli detection/test.h"
 
 GTYPE test(Clayer *start, Clayer *end)
 {

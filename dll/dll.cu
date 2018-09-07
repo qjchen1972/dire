@@ -1,30 +1,20 @@
 #include<stdio.h>
 #include<time.h>
+#define  GPU
+#include "../Bacilli detection/net.h"
+#include "dire.h"
 
-#include "Bacilli detection/net.h"
+//nvcc -m32 -arch=sm_61 -o dire.dll --shared dll.cu
 
-
-int main(int argc, char** argv)
+int dire(int mode, char *file) 
 {
-	if (argc != 3 ) 
-	{
-		printf("Usage: dire mode config_file\n");
-		printf("0 --- restart contrain\n");
-		printf("1 --- continue contrain\n");
-		printf("2 --- test\n");
-		printf("3 --- prarm check\n");
-		return 0;
-	}
+    time_t now = time(0);
+    srand(now);
 
-	time_t now = time(0);
-	srand(now);
-
-	int mode = atoi(argv[1]);	
-	g_config.set_config_file(argv[2]);
+	g_config.set_config_file(file);
 
 	if (!g_config.read_param()) return 0;
-
-
+	
 	Clayer *global = new Clayer();
 	global->set_batch_size(g_config.m_batch_num);
 
@@ -58,8 +48,6 @@ int main(int argc, char** argv)
 	build_net((Clayer**)&start, (Clayer**)&end);
 
 	forward_travel(start, INIT_PROC);	
-
-	//char file[FILENAME_LEN];
 	if (mode == CONT_TRAINING || mode == TESTING)
 	{
 		char file[FILENAME_LEN];
@@ -77,8 +65,11 @@ int main(int argc, char** argv)
 	else
 		forward_travel(start, INIT_PARAM);	
 	
+	//指定的gpu设备做下面的事
 	forward_travel(start, INIT_SPACE);
-	
+    global->set_global_mem();
+    init_layer_const();
+
 	switch (mode)
 	{
 	case 0:		
@@ -86,13 +77,15 @@ int main(int argc, char** argv)
 		train(start, end, global);
 		break;
 	case 2:
+	   {
 		test(start, end);
 		break;
+		}
 	case 3:
 		check_gd(start, end);
 		break;
 	default:
 		return 0;
 	}
-	return 0;
+	return 1;
 }

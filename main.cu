@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<time.h>
 #define  GPU
-#include "net.h"
+#include "Bacilli detection/net.h"
+
 
 
 int main(int argc, char** argv)

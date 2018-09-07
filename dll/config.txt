@@ -1,0 +1,25 @@
+batchsize= 1
+memoryfree= 2
+traindir= data
+testdir= data
+
+workparam= paramv1.0
+netmode= 1
+initmode= 1
+studymode= 0
+studyrate= 0.1
+regularmode= 0
+rulerate= 0.0001
+momentumrate= 0.5
+
+minlossparam= param
+minlossswitch= 1 
+lastlossparam= param_last
+lastlossswitch= 0 
+bestanswerparam= param_best
+bestanswerswitch= 0 
+
+testbatchsize= 1
+trainbatchsize= 32
+testmode= 0
+testlog= 1
