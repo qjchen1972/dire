@@ -1,3 +1,8 @@
+
+Dire is a c++ package that provides two high-level features:
+
+Double precision
+
 dire是什么
 ====
 
