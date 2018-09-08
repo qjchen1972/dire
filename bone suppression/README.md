@@ -4,7 +4,7 @@ The purpose of this project is to remove the ribs of chest radiographs. After re
 * network model:
    * The Resnet of 12 layers, refering to [net.h](https://github.com/qjchen1972/dire/blob/master/bone%20suppression/net.h)
    
-*  From 100 images of bone chest, randomly cut, and generate 512000 32X32 gradient images. At the same time, the corresponding 8X8 label were generated from the corresponding bone removed chest radiographs:
+*  From 100 images of bone chest, randomly cut, and generate 512000 32X32 gradient images. At the same time, the corresponding 8X8 labels were generated from the corresponding bone removed chest radiographs:
    * tool xxx/train_data xxx/train_label 32 32 512000
    
 *  A bone chest radiograph of 512X512 is divided into N gradient maps of 32X32, input into the trained model, generate data, and then solve a Possion equation. Finally, Chest radiographs without bones are generated. 
