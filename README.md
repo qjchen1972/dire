@@ -38,6 +38,10 @@ Getting Started
 
 * create data file：train_data  train_label  test_data test_label
     * [one sample with simple tool](https://github.com/qjchen1972/dire/blob/master/data_tool/README.md)
+* create net.h and test.h for applications:
+    * net.h is networks model 
+    * test.h is special test for applications
+* compile it
 * setup config.txt
 * train:
     * dire_gpu 0 config.txt
