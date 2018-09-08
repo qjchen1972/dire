@@ -14,8 +14,8 @@ The following applications are available with dire:
 
 Dependencies
 ====
-* >=c++11
-* cuda7.0(if you need gpu)
+* c++11 or later
+* cuda7.0 or later (if you need gpu)
 
 
 Install
