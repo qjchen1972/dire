@@ -20,6 +20,16 @@ Install
    * On linux:     g++ main.cpp -o dire -std=c++11
    * On windows:   compile with VS 2017
 
+Dire can generate dynamic libraries or static libraries, and other programs call it.
+* [windows dll](https://github.com/qjchen1972/dire/blob/master/dll/README.md)
+
+
+
+Getting Started
+====
+
+create data file
+---
 
 dire是什么
 ====
