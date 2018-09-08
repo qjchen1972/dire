@@ -50,3 +50,9 @@ Getting Started
 * gradient check:
     * dire_gpu 3 config.txt    
 
+
+TODO:
+===
+* In a suitable time, try to modify the computation of Convolution layer with Winograd, GEMM and so on. 
+* More easy to use
+* Support onnx
