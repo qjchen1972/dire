@@ -10,6 +10,14 @@ The following applications are available with dire:
 * [Bacilli detection](https://github.com/qjchen1972/dire/blob/master/Bacilli%20detection/README.md)
 * [ChexNet with dire ](https://github.com/qjchen1972/dire/blob/master/ChexNet/README.md)
 
+
+
+Dependencies
+====
+* >=c++11
+* cuda7.0(if you need gpu)
+
+
 Install
 ===
 * GPU:
