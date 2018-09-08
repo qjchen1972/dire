@@ -28,8 +28,16 @@ Dire can generate dynamic libraries or static libraries, and other programs call
 Getting Started
 ====
 
-create data file
----
+* create data file：train_data  train_label  test_data test_label
+    * [one sample with simple tool](https://github.com/qjchen1972/dire/blob/master/data_tool/README.md)
+* setup config.txt
+* train:
+    * dire_gpu 0 config.txt
+* test:
+    * dire_gpu 2 config.txt
+* gradient check:
+    * dire_gpu 3 config.txt
+    
 
 dire是什么
 ====
