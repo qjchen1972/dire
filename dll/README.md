@@ -8,7 +8,7 @@ it is a sample for windows dll using GPU
   
 * other program  call it for test:
 
-typedef int(*Api)(int, char*);
+typedef int( **Api)(int, char**);
 
 int main(int argc, char** argv)
 
