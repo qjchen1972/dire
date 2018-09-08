@@ -1,5 +1,5 @@
 
-it is a sample for windows dll using GPU
+it is a sample based on windows dll using GPU
 ====
 
 * build dll
