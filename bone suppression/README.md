@@ -1,5 +1,5 @@
 
-The purpose of this project is to remove the ribs of chest radiographs. After referring to [this paper](https://github.com/qjchen1972/dire/blob/master/bone%20suppression/GZ%20U%20B%20S.pdf), I used gradient images as training data and trained with dire
+The purpose of this project is to remove the ribs of chest radiographs. After referring to [this paper](https://github.com/qjchen1972/dire/blob/master/bone%20suppression/GZ%20U%20B%20S.pdf), I used gradient images as training data and trained with Dire
 
 * network model:
    * The Resnet of 12 layers, refering to [net.h](https://github.com/qjchen1972/dire/blob/master/bone%20suppression/net.h)
