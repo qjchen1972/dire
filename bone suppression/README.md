@@ -6,6 +6,7 @@ The purpose of this project is to remove the ribs of chest radiographs. After re
    
 *  From 100 images of bone chest, randomly cut, and generate 512000 32X32 gradient images. At the same time, the corresponding 8X8 labels were generated from the corresponding bone removed chest radiographs:
    * tool xxx/train_data xxx/train_label 32 32 512000
+*  With SGD, after about 15 days, the training loss finally converges to less than 3
    
 *  A bone chest radiograph of 512X512 is divided into N gradient maps of 32X32, input into the trained model, generate data, and then solve a Possion equation. Finally, Chest radiographs without bones are generated. 
    * tool src_file  grad_file 512  512 32  32  out.jpg  10
