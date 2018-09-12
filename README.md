@@ -53,6 +53,6 @@ Getting Started
 
 TODO:
 ===
-* In a suitable time,  modifying the computation of Convolution layer with Winograd, GEMM and so on. 
+* In a suitable time,  referring to this [paper](https://github.com/qjchen1972/dire/blob/master/Lavin_Fast_Algorithms_for_CVPR_2016_paper.pdf), modifying the computation of Convolution layer with Winograd, GEMM and so on. 
 * More easy to use
 * Support onnx
